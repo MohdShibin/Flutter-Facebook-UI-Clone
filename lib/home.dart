@@ -1,3 +1,4 @@
+import 'package:fb/section/statusSection.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:fb/widgets/appBarButton.dart';
@@ -9,7 +10,7 @@ class Home extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.white,
-          elevation: 1,
+          elevation: 0,
           actions: [
             AppBarButton(buttonIcon: Icons.search, buttonAction: (){
               print("search");
@@ -27,6 +28,11 @@ class Home extends StatelessWidget {
               fontWeight: FontWeight.bold,
             ),
           ),
+        ),
+        body: ListView(
+          children: [
+            StatusSection()
+          ],
         ),
       ),
     );
