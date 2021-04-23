@@ -1,9 +1,11 @@
+import 'package:fb/section/headerButtonSection.dart';
 import 'package:fb/section/statusSection.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:fb/widgets/appBarButton.dart';
 
 class Home extends StatelessWidget {
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -31,7 +33,16 @@ class Home extends StatelessWidget {
         ),
         body: ListView(
           children: [
-            StatusSection()
+            StatusSection(),
+            Divider(
+              thickness: 1,
+              color: Colors.grey[300],
+            ),
+            HeaderButtonSection(),
+            Divider(
+              thickness: 8,
+              color: Colors.grey[300],
+            ),
           ],
         ),
       ),
