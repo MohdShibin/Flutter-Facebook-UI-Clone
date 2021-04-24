@@ -1,10 +1,20 @@
 import 'package:fb/section/headerButtonSection.dart';
+import 'package:fb/section/roomSection.dart';
 import 'package:fb/section/statusSection.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:fb/widgets/appBarButton.dart';
 
 class Home extends StatelessWidget {
+
+  Widget FbDivider ({
+  @required double thick,
+  }){
+    return Divider(
+    thickness: thick,
+    color: Colors.grey[300],
+);
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -34,15 +44,11 @@ class Home extends StatelessWidget {
         body: ListView(
           children: [
             StatusSection(),
-            Divider(
-              thickness: 1,
-              color: Colors.grey[300],
-            ),
+            FbDivider(thick: 1),
             HeaderButtonSection(),
-            Divider(
-              thickness: 8,
-              color: Colors.grey[300],
-            ),
+            FbDivider(thick: 10),
+            RoomSection(),
+            FbDivider(thick: 10),
           ],
         ),
       ),
