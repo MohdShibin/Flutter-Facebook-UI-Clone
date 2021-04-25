@@ -29,12 +29,12 @@ class RoomSection extends StatelessWidget{
         padding: EdgeInsets.all(10),
         children: [
           createRoomButtton(),
-          Avatar(displayImage: "assets/dq.jpg"),
-          Avatar(displayImage: "assets/tovino.jpg"),
-          Avatar(displayImage: "assets/dq.jpg"),
-          Avatar(displayImage: "assets/tovino.jpg"),
-          Avatar(displayImage: "assets/dq.jpg"),
-          Avatar(displayImage: "assets/tovino.jpg"),
+          Avatar(displayImage: "assets/dq.jpg",displayStatus:true),
+          Avatar(displayImage: "assets/tovino.jpg",displayStatus:true),
+          Avatar(displayImage: "assets/dq.jpg",displayStatus:true),
+          Avatar(displayImage: "assets/tovino.jpg",displayStatus:true),
+          Avatar(displayImage: "assets/dq.jpg",displayStatus:true),
+          Avatar(displayImage: "assets/tovino.jpg",displayStatus:true),
         ],
       ),
     );
