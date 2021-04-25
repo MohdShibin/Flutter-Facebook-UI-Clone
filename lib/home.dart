@@ -1,8 +1,9 @@
 import 'package:fb/section/headerButtonSection.dart';
 import 'package:fb/section/roomSection.dart';
 import 'package:fb/section/statusSection.dart';
+import 'package:fb/section/storySection.dart';
 import 'package:flutter/material.dart';
-import 'package:fb/widgets/appBarButton.dart';
+import 'package:fb/widgets/CircularButton.dart';
 
 class Home extends StatelessWidget {
 
@@ -23,10 +24,10 @@ class Home extends StatelessWidget {
           backgroundColor: Colors.white,
           elevation: 0,
           actions: [
-            AppBarButton(buttonIcon: Icons.search, buttonAction: (){
+            CircularButton(buttonIcon: Icons.search, buttonAction: (){
               print("search");
             }),
-            AppBarButton(buttonIcon: Icons.chat, buttonAction: (){
+            CircularButton(buttonIcon: Icons.chat, buttonAction: (){
               print("messenger");
             }),
 
@@ -48,6 +49,7 @@ class Home extends StatelessWidget {
             FbDivider(thick: 10),
             RoomSection(),
             FbDivider(thick: 10),
+            StorySection(),
           ],
         ),
       ),

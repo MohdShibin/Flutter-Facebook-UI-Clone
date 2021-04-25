@@ -1,13 +1,15 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class AppBarButton extends StatelessWidget {
+class CircularButton extends StatelessWidget {
   final IconData buttonIcon;
   final void Function() buttonAction;
+  final Color iconColor;
 
-  AppBarButton({
+  CircularButton({
     @required this.buttonIcon,
     @required this.buttonAction,
+    this.iconColor=Colors.black,
   });
 
   @override
@@ -21,7 +23,7 @@ class AppBarButton extends StatelessWidget {
       child: IconButton(
         icon: Icon(
           buttonIcon,
-          color: Colors.black,
+          color: iconColor,
           size: 25,
         ),
         onPressed: buttonAction,
