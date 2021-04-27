@@ -3,10 +3,12 @@ import 'package:flutter/material.dart';
 class Avatar extends StatelessWidget {
   final String displayImage;
   final bool displayStatus;
+  final bool displayBorder;
 
   Avatar({
     @required this.displayImage,
     @required this.displayStatus,
+    this.displayBorder=false,
   });
   Widget StatusIndicator;
 
@@ -15,6 +17,13 @@ class Avatar extends StatelessWidget {
     return Stack(
       children: [
         Container(
+          decoration: BoxDecoration(
+            shape: BoxShape.circle,
+            border:displayBorder ? Border.all(
+              color: Colors.blueAccent,
+              width: 3,
+            ):null,
+          ),
           padding: EdgeInsets.only(left: 5, right: 5),
           child: ClipRRect(
             child: Image.asset(
