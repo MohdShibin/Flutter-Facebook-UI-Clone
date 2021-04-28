@@ -2,6 +2,7 @@ import 'package:fb/section/headerButtonSection.dart';
 import 'package:fb/section/roomSection.dart';
 import 'package:fb/section/statusSection.dart';
 import 'package:fb/section/storySection.dart';
+import 'package:fb/widgets/postCard.dart';
 import 'package:flutter/material.dart';
 import 'package:fb/widgets/CircularButton.dart';
 
@@ -50,6 +51,8 @@ class Home extends StatelessWidget {
             RoomSection(),
             FbDivider(thick: 10),
             StorySection(),
+            FbDivider(thick: 10),
+            PostCard(),
           ],
         ),
       ),
