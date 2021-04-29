@@ -52,7 +52,11 @@ class Home extends StatelessWidget {
             FbDivider(thick: 10),
             StorySection(),
             FbDivider(thick: 10),
-            PostCard(),
+            PostCard(
+              avatar: "assets/dq.jpg",
+              publishedAt: "5h",
+              avatarName: "Dulquer Salmaan",
+            ),
           ],
         ),
       ),

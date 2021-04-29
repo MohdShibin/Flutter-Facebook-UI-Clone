@@ -4,6 +4,18 @@ import 'package:flutter/material.dart';
 import 'avatar.dart';
 
 class PostCard extends StatelessWidget {
+  final String avatar;
+  final String publishedAt;
+  final String avatarName;
+
+  const PostCard({
+    @required this.avatar,
+    @required this.publishedAt,
+    @required this.avatarName,
+  });
+
+
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -11,19 +23,19 @@ class PostCard extends StatelessWidget {
         children: [
           ListTile(
             leading: Avatar(
-              displayImage: "assets/dq.jpg",
+              displayImage: avatar,
               displayStatus: false,
             ),
             title: Row(
               children: [
-                Text("dq"),
+                Text(avatarName),
                 SizedBox(width: 10),
                 BlueTick(),
               ],
             ),
             subtitle: Row(
               children: [
-                Text("5h"),
+                Text(publishedAt == null ? " " : publishedAt),
                 SizedBox(
                   width: 10,
                 ),
