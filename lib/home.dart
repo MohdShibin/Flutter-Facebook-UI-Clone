@@ -58,6 +58,7 @@ class Home extends StatelessWidget {
               avatarName: "Dulquer Salmaan",
               postTitle: "happy",
               postImage: "assets/dq.jpg",
+              showBlueTick: true,
             ),
           ],
         ),
