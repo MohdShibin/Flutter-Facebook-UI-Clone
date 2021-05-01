@@ -56,6 +56,8 @@ class Home extends StatelessWidget {
               avatar: "assets/dq.jpg",
               publishedAt: "5h",
               avatarName: "Dulquer Salmaan",
+              postTitle: "happy",
+              postImage: "assets/dq.jpg",
             ),
           ],
         ),
