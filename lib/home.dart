@@ -1,4 +1,4 @@
-import 'package:fb/section/headerButtonSection.dart';
+import 'package:fb/section/ButtonSection.dart';
 import 'package:fb/section/roomSection.dart';
 import 'package:fb/section/statusSection.dart';
 import 'package:fb/section/storySection.dart';
@@ -46,7 +46,7 @@ class Home extends StatelessWidget {
           children: [
             StatusSection(),
             FbDivider(thick: 1),
-            HeaderButtonSection(),
+            ButtonSection(),
             FbDivider(thick: 10),
             RoomSection(),
             FbDivider(thick: 10),
@@ -59,6 +59,9 @@ class Home extends StatelessWidget {
               postTitle: "happy",
               postImage: "assets/dq.jpg",
               showBlueTick: true,
+              likeCount: "12K",
+              commentCount: "2K",
+              shareCount: "1k",
             ),
           ],
         ),
