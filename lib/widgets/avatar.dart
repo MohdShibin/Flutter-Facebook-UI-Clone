@@ -4,13 +4,16 @@ class Avatar extends StatelessWidget {
   final String displayImage;
   final bool displayStatus;
   final bool displayBorder;
+  final double width;
+  final double height;
 
   Avatar({
     @required this.displayImage,
     @required this.displayStatus,
     this.displayBorder=false,
+    this.height=50,
+    this.width=50,
   });
-  Widget StatusIndicator;
 
   @override
   Widget build(BuildContext context) {
@@ -28,14 +31,14 @@ class Avatar extends StatelessWidget {
           child: ClipRRect(
             child: Image.asset(
               displayImage,
-              width: 50,
-              height: 50,
+              width: width,
+              height: height,
               fit: BoxFit.cover,
             ),
             borderRadius: BorderRadius.circular(100),
           ),
         ),
-        StatusIndicator= displayStatus ? Positioned(
+        displayStatus ? Positioned(
           bottom: 0,
           right: 1.0,
           child: Container(
