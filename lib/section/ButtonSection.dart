@@ -1,8 +1,13 @@
 import 'package:flutter/material.dart';
 
-class HeaderButtonSection extends StatelessWidget {
+class ButtonSection extends StatelessWidget {
+  final bool isHeader;
 
-  Widget verticalDivider=VerticalDivider(
+  ButtonSection({
+    this.isHeader=false,
+  });
+
+  Widget verticalDivider = VerticalDivider(
     thickness: 1,
     color: Colors.grey[300],
   );
@@ -14,9 +19,9 @@ class HeaderButtonSection extends StatelessWidget {
     @required void Function() buttonAction,
   }) {
     return FlatButton.icon(
-        onPressed: buttonAction,
-        label: Text(buttonText),
-        icon: Icon(buttonIcon, color: buttonColor),
+      onPressed: buttonAction,
+      label: Text(buttonText),
+      icon: Icon(buttonIcon, color: buttonColor),
     );
   }
 
@@ -24,35 +29,61 @@ class HeaderButtonSection extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       height: 40,
-      child: Row(
+      child:isHeader? Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
-          headerButton(buttonText: "Live",
+          headerButton(
+              buttonText: "Live",
               buttonIcon: Icons.video_call,
               buttonColor: Colors.red,
-              buttonAction : (){
+              buttonAction: () {
                 print("Live");
-              }
-          ),
+              }),
           verticalDivider,
-          headerButton(buttonText: "Photo",
+          headerButton(
+              buttonText: "Photo",
               buttonIcon: Icons.photo_library,
               buttonColor: Colors.green,
-              buttonAction : (){
+              buttonAction: () {
                 print("Photo ");
-              }
-          ),
+              }),
           verticalDivider,
-          headerButton(buttonText: "Room",
+          headerButton(
+              buttonText: "Room",
               buttonIcon: Icons.video_call,
               buttonColor: Colors.purple,
-              buttonAction : (){
+              buttonAction: () {
                 print("Room ");
-              }
-          ),
+              }),
         ],
-      ),
+      ):Row(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        children: [
+          headerButton(
+              buttonText: "Like",
+              buttonIcon: Icons.thumb_up_alt_outlined,
+              buttonColor: Colors.grey[700],
+              buttonAction: () {
+                print("Like post");
+              }),
+          verticalDivider,
+          headerButton(
+              buttonText: "Comment",
+              buttonIcon: Icons.message_outlined,
+              buttonColor: Colors.grey[700],
+              buttonAction: () {
+                print("comment");
+              }),
+          verticalDivider,
+          headerButton(
+              buttonText: "Share",
+              buttonIcon: Icons.share_outlined,
+              buttonColor: Colors.grey[700],
+              buttonAction: () {
+                print("Share this ");
+              }),
+        ],
+      )
     );
   }
-
 }
