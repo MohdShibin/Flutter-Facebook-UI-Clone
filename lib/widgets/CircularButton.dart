@@ -15,6 +15,8 @@ class CircularButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      height: 40,
+      width: 40,
       margin: EdgeInsets.all(5),
       decoration: BoxDecoration(
         color: Colors.grey[300],
