@@ -74,6 +74,7 @@ class Home extends StatelessWidget {
               commentCount: "5K",
               shareCount: "3k",
             ),
+            FbDivider(thick: 10),
           ],
         ),
       ),
