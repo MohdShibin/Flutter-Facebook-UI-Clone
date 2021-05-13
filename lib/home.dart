@@ -2,6 +2,7 @@ import 'package:fb/section/ButtonSection.dart';
 import 'package:fb/section/roomSection.dart';
 import 'package:fb/section/statusSection.dart';
 import 'package:fb/section/storySection.dart';
+import 'package:fb/section/suggestionSection.dart';
 import 'package:fb/widgets/postCard.dart';
 import 'package:flutter/material.dart';
 import 'package:fb/widgets/CircularButton.dart';
@@ -64,17 +65,19 @@ class Home extends StatelessWidget {
               shareCount: "1k",
             ),
             FbDivider(thick: 10),
+            SuggestionSection(),
+            FbDivider(thick: 10),
             PostCard(
               avatar: "assets/tovino.jpg",
               publishedAt: "6h",
               avatarName: "Tovino Thomas",
-              postImage: "assets/tovino.jpg",
+              postImage: "assets/story2.jpg",
               showBlueTick: true,
               likeCount: "14K",
               commentCount: "5K",
               shareCount: "3k",
             ),
-            
+            FbDivider(thick: 10),
           ],
         ),
       ),
