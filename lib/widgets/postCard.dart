@@ -19,7 +19,7 @@ class PostCard extends StatelessWidget {
     @required this.avatar,
     @required this.publishedAt,
     @required this.avatarName,
-    @required this.postTitle,
+    this.postTitle = "",
     @required this.postImage,
     @required this.likeCount,
     @required this.commentCount,
@@ -53,7 +53,7 @@ class PostCard extends StatelessWidget {
   }
 
   Widget titleSection() {
-    return postTitle !=null && postTitle=="" ?
+    return postTitle !=null || postTitle!="" ?
       Container(
       padding: EdgeInsets.only(bottom: 5,left: 10,right: 10),
       child: Text(
