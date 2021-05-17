@@ -22,6 +22,7 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
+
         appBar: AppBar(
           backgroundColor: Colors.white,
           elevation: 0,
