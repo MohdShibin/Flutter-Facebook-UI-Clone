@@ -1,6 +1,10 @@
-# fb
+# Flutter-Facebook-Clone
+A WhatsApp UI clone using flutter.
 
-A new Flutter application.
+Please leave a star . Thats how I know people appreciate. Thanks you.
+
+## ScreenShot
+
 
 ## Getting Started
 
