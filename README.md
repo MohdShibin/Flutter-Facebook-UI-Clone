@@ -8,9 +8,7 @@ Please leave a star:star: . Thats how I know your appreciate. Thanks you.:heart:
 
 <p float="left" >
 <img src="https://github.com/MohdShibin/Flutter-Facebook-UI-Clone/blob/master/assets/Screenshots/Screenshot1.png" width="270" height="480" />
-____
 <img src="https://github.com/MohdShibin/Flutter-Facebook-UI-Clone/blob/master/assets/Screenshots/Screenshot2.png" width="270" height="480" />
-____
 <img src="https://github.com/MohdShibin/Flutter-Facebook-UI-Clone/blob/master/assets/Screenshots/Screenshot3.png" width="270" height="480" />
 </p>
 
