@@ -1,10 +1,18 @@
 # Flutter-Facebook-Clone
-A WhatsApp UI clone using flutter.
 
-Please leave a star . Thats how I know people appreciate. Thanks you.
+A Facebook UI clone using flutter.
 
-## ScreenShot
+Please leave a star:star: . Thats how I know your appreciate. Thanks you.:heart:
 
+## ScreenShots
+
+<p float="left" >
+<img src="https://github.com/MohdShibin/Flutter-Facebook-UI-Clone/blob/master/assets/Screenshots/Screenshot1.png" width="270" height="480" />
+____
+<img src="https://github.com/MohdShibin/Flutter-Facebook-UI-Clone/blob/master/assets/Screenshots/Screenshot2.png" width="270" height="480" />
+____
+<img src="https://github.com/MohdShibin/Flutter-Facebook-UI-Clone/blob/master/assets/Screenshots/Screenshot3.png" width="270" height="480" />
+</p>
 
 ## Getting Started
 
