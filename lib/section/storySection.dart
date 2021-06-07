@@ -17,7 +17,7 @@ class StorySection extends StatelessWidget {
           ),
           StoryCard(
             AvatarPic: "assets/dq.jpg",
-            Story: "assets/story1.jpg",
+            Story: "assets/story1.jpeg",
             LabelText: "Dulquer Salmaan",
           ),
           StoryCard(
